@@ -1,14 +1,12 @@
-It is built for blockchain smart contracts.
+# A language designed for constructing blockchain smart contracts with state channels.
 
-This is a language make for state channels.
+- It is deterministic, so that every node of the blockchain gets the same result.
 
-It is deterministic, so that every node of the blockchain gets the same result.
+- Functions are tail call optimized.
 
-Functions are tail call optimized.
+- Has 2 types of gas, one for space, and one for time.
 
-Has 2 types of gas, one for space, and one for time.
-
-Instead of using goto for recursion, it uses function calls.
+- Instead of using `goto` for recursion, it uses function calls.
 
 [You can read the documentation for the opcodes that make up the language that this VM understand here](/docs/opcodes.md)
 
@@ -16,21 +14,17 @@ Instead of using goto for recursion, it uses function calls.
 
 [You can see lisp-like example code here](/src/lisp), and [here](/src/lisp2).
 
-to install:
+## install it:
 
-sh install.sh
+`git clone https://github.com/BumblebeeBat/chalang &&\
+cd chalang &&\
+sh install.sh`
 
+## start an Aeternity/plasmodial node with these libraries loaded:
 
-to start a node with these libraries loaded:
+`sh start.sh`
 
-sh start.sh
+## run tests on a node:
 
-
-
-to run tests on a node:
-
-1> test_chalang:test().
-
-
-
+`1>`  `test_chalang:test().`
 
